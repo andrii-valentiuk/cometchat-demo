@@ -1,0 +1,15 @@
+@import url('@cometchat/chat-uikit-react/css-variables.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100dvh;
+}

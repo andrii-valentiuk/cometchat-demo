@@ -1,0 +1,83 @@
+.sign-in {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  padding: 1.5rem;
+  font-family: system-ui, sans-serif;
+}
+
+.sign-in__form {
+  width: 100%;
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sign-in__title {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sign-in__hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, CanvasText 65%, Canvas);
+}
+
+.sign-in__label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.sign-in__input {
+  padding: 0.5rem 0.625rem;
+  font: inherit;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, CanvasText 18%, transparent);
+  background: Field;
+  color: FieldText;
+}
+
+.sign-in__input:disabled {
+  opacity: 0.7;
+}
+
+.sign-in__error {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #b42318;
+}
+
+.sign-in__submit {
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: color-mix(in srgb, CanvasText 88%, Canvas);
+  color: Canvas;
+}
+
+.sign-in__submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.group-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 960px;
+  margin: 0 auto;
+  border-inline: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
+}
+
+.group-chat__messages {
+  flex: 1;
+  min-height: 0;
+}
